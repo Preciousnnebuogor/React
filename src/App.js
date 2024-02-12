@@ -1,11 +1,14 @@
-function App() {
-  const title = "what a wonderful day to read"
-  const google = "www.google.com"
 
+import Home from "./components/home";
+import { MapArrary } from "./components/mapArrary";
+import { Navbar } from "./components/navbar";
+
+function App() {
   return (
-    <div className="">
-      <h1>{title}</h1>
-      <a href="{google}">site</a>
+    <div>
+   <Navbar/>
+   <Home/>
+   <MapArrary/>
     </div>
   );
 }
