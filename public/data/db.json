@@ -1,0 +1,16 @@
+{
+ "blogs": [
+    {
+        "title": "My name Precious",
+        "body": " the meaning of your name is who you are meant to be",
+        "author": "presh",
+        "id": 1
+    },
+    {
+        "title": "The beginning of a world",
+        "body": " the world has an open ceremony for the world to us your use",
+        "author": "felix",
+        "id": 2 
+    }
+  ]   
+}
