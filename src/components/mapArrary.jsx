@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ArrayProps from "./props";
+
 
 
 export function MapArrary() {
@@ -17,13 +18,23 @@ export function MapArrary() {
       id: "2",
     },
   ]);
+const [name, setName] = useState("mine");
+
   const handleDelete = (id) => {
     const newBlogs = blogs.filter(blog => blog.id !== id);
     setBlogs(newBlogs)
   }
+  
+   useEffect(() => {
+    console.log("we are here")
+    console.log(name);
+   }, [name])  
+  
   return (
     <div>
       <ArrayProps blogs={blogs} tithe="all define" handleDelete={handleDelete} />
+    <button onClick={ () => {setName("love")}}>click here</button>
+    <p>{name}</p>
     </div>
   );
 }
