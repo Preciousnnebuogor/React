@@ -1,8 +1,5 @@
 import { useState } from "react";
-import ArrayProps from "./props";
-
-
-export function MapArrary() {
+export default function Practice() {
   const [blogs, setBlogs] = useState([
     {
       title: "i love you",
@@ -17,13 +14,21 @@ export function MapArrary() {
       id: "2",
     },
   ]);
-  const handleDelete = (id) => {
-    const newBlogs = blogs.filter(blog => blog.id !== id);
-    setBlogs(newBlogs)
-  }
-  return (
-    <div>
-      <ArrayProps blogs={blogs} tithe="all define" handleDelete={handleDelete} />
-    </div>
-  );
+
+  return <div>
+{blogs.map((blog) => (
+       <div className="blogslite" key={blog.id}>
+        <h1>{blog.title}</h1>
+        <p>{blog.author}</p>
+        <h2>{blog.body}</h2>
+        <h3>{blog.id}</h3>
+       </div> 
+     ))}
+  </div>
 }
+
+
+
+
+
+
