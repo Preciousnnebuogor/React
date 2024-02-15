@@ -1,6 +1,7 @@
 import Props from "./propsvite";
 
 export default function HomeProps() {
+    const fruits = ["apple", "orange", "pawpaw", "mango"]
   const person = {
     name: "peter",
     message: "i am collect",
@@ -8,7 +9,7 @@ export default function HomeProps() {
   };
   return (
     <div>
-      <Props person={person} />
+      <Props person={person} fruits={fruits} />
     </div>
   );
 }
