@@ -13,5 +13,7 @@ if (display) {
       <p>the future belongs to us</p>
     </div>
   );
+  //  this is conditional rendering jsx
 }
+
 }
