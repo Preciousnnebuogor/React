@@ -1,15 +1,10 @@
-import Conditional from "./components/conditional";
-import Message from "./components/elementVariableCoditional";
-import HomeProps from "./components/homepropsvite";
-import TernaryCondition from "./components/ternarycondition";
+
+import HandleEvent from "./components/eventhandling";
 
 function App() {
   return (
     <div>
-      <HomeProps />
-      <Conditional/>
-      <Message/>
-      <TernaryCondition/>
+      <HandleEvent/>
     </div>
   );
 }
