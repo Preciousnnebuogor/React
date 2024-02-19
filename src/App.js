@@ -1,12 +1,10 @@
 
-import HandleEvent from "./components/eventhandling";
-import Effect from "./components/useEffect";
+import ReducerHook from "./components/useReduceHook";
 
 function App() {
   return (
     <div>
-      <HandleEvent/>
-      <Effect/>
+      <ReducerHook/>
     </div>
   );
 }
